@@ -14,8 +14,8 @@ is different from:
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Emily Macak.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
 
@@ -23,7 +23,7 @@ import rosegraphics as rg
 def main():
     """ Calls the   TEST   functions in this module. """
     # -------------------------------------------------------------------------
-    # TODO: 2.  EXAMINE the  4  sequences immediately below
+    # DONE: 2.  EXAMINE the  4  sequences immediately below
     #   this comment, and READ the instructions that follows them.
     #
     # When you have examined the 4 sequences below and understand how
@@ -99,7 +99,6 @@ def run_test_print_all_items_forwards(sequence1, sequence2, sequence3,
     print('Actual:  ')
     print_all_items_forwards(sequence4)
 
-
 def run_test_print_all_items_backwards(sequence1, sequence2, sequence3,
                                        sequence4):
     """ Tests the   print_all_items_backwards   function. """
@@ -134,7 +133,6 @@ def run_test_print_all_items_backwards(sequence1, sequence2, sequence3,
     print('55\ntuple\nis a\nThis\n')
     print('Actual:  ')
     print_all_items_backwards(sequence4)
-
 
 def run_test_print_items_at_odd_indices(sequence1, sequence2, sequence3,
                                         sequence4):
@@ -179,7 +177,6 @@ def run_test_print_items_at_odd_indices(sequence1, sequence2, sequence3,
     print('Actual:  ')
     print_items_at_odd_indices(sequence4)
 
-
 def run_test_print_items_in_second_half(sequence1, sequence2, sequence3,
                                         sequence4):
     print()
@@ -214,7 +211,6 @@ def run_test_print_items_in_second_half(sequence1, sequence2, sequence3,
     print('tuple\n55\n')
     print('Actual:  ')
     print_items_in_second_half(sequence4)
-
 
 def run_test_print_items_that_are_bigger_than_5():
     # Note:  The tests of this function use sequences that are DIFFERENT
