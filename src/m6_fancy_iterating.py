@@ -49,14 +49,10 @@ def main():
     #        RE-commenting out the previous test if you wish.
     # -------------------------------------------------------------------------
 
-    run_test_print_all_items_forwards(sequence1, sequence2, sequence3,
-                                      sequence4)
-    # run_test_print_all_items_backwards(sequence1, sequence2, sequence3,
-    #                                    sequence4)
-    # run_test_print_items_at_odd_indices(sequence1, sequence2, sequence3,
-    #                                     sequence4)
-    # run_test_print_items_in_second_half(sequence1, sequence2, sequence3,
-    #                                     sequence4)
+    #run_test_print_all_items_forwards(sequence1, sequence2, sequence3, sequence4)
+    #run_test_print_all_items_backwards(sequence1, sequence2, sequence3, sequence4)
+    #run_test_print_items_at_odd_indices(sequence1, sequence2, sequence3, sequence4)
+    run_test_print_items_in_second_half(sequence1, sequence2, sequence3, sequence4)
     # run_test_print_items_that_are_bigger_than_5()  # Uses different sequences
     # run_test_print_items_that_are_strings(sequence1, sequence2, sequence3,
     #                                       sequence4)
@@ -364,10 +360,11 @@ def print_all_items_forwards(sequence):
        Point at (90, 25)
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
-
+    for k in range(len(sequence)):
+        print(sequence[k])
 
 ###############################################################################
 # Iterating through the ENTIRE sequence, BACKWARDs.
@@ -386,10 +383,11 @@ def print_all_items_backwards(sequence):
        55
     """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
-
+    for k in range(len(sequence)-1, -1, -1):
+        print(sequence[k])
 
 ###############################################################################
 # Iterating through PART of a sequence:
@@ -408,10 +406,13 @@ def print_items_at_odd_indices(sequence):
       33 is at index 5
     """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 
+    for k in range(len(sequence)):
+        if k%2 == 1:
+            print(sequence[k])
 
 ###############################################################################
 # Iterating through PART of a sequence:
@@ -440,7 +441,9 @@ def print_items_in_second_half(sequence):
     # IMPORTANT: RANGE expressions need INTEGERS.
     #   Use   //   for integer division.
     # -------------------------------------------------------------------------
-
+    x = len(sequence)/2
+    for k in range(x, len(sequence)-1):
+        print (sequence[k])
 
 ###############################################################################
 # Iterating through a sequence, selecting items:
